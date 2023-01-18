@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:white_test/screen/settings_screen.dart';
+import 'package:white_test/screens/settings_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

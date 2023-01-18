@@ -20,19 +20,23 @@ class SettingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 35, right: 35),
+      padding: const EdgeInsets.symmetric(horizontal: 35),
       child: MaterialButton(
         padding: EdgeInsets.zero,
         onPressed: onPressed,
         child: Container(
           height: size.height / 15.43,
+          decoration: const BoxDecoration(
+            color: containerWhite,
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
-                  '$text',
+                  text,
                   style: getBoldTextStyle(
                     color: blueText,
                     fontSize: 20,
@@ -40,18 +44,14 @@ class SettingButton extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(right: 26),
+              const Padding(
+                padding: EdgeInsets.only(right: 26),
                 child: Icon(
                   Icons.chevron_right,
                   color: blueText,
                 ),
               ),
             ],
-          ),
-          decoration: BoxDecoration(
-            color: containerWhite,
-            borderRadius: BorderRadius.all(Radius.circular(15)),
           ),
         ),
       ),
