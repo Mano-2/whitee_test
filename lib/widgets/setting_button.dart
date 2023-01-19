@@ -21,6 +21,7 @@ class SettingButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 35),
+      //button with customizable onpressed ,text
       child: MaterialButton(
         padding: EdgeInsets.zero,
         onPressed: onPressed,

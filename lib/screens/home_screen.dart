@@ -25,6 +25,7 @@ class HomeScreen extends ConsumerWidget {
       child: Column(children: [
         Padding(
           padding: EdgeInsets.only(top: size.height / 23.15),
+          //text with style from common/utils file
           child: Text(
             'Settings',
             style: getBoldTextStyle(

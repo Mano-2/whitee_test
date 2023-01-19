@@ -19,7 +19,7 @@ class _SettingScreenState extends ConsumerState<SettingScreen> {
   @override
   void initState() {
     super.initState();
-
+    // used riverpod for state mangement to get the size
     ref.read(sizeConfigProvider);
   }
 
